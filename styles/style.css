@@ -23,3 +23,6 @@ body {
     background-size: 100%;
     font-family: cursive;
 }
+a{
+    text-decoration: none;
+}
