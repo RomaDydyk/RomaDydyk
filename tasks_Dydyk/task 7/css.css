@@ -1,0 +1,39 @@
+
+.one,.two,.three {
+    width: 200px;
+    height: 80px;
+    border: 6px solid black;
+    position: relative;
+    margin: 10px;
+    z-index: 2;
+}
+.one::before,.two::before,.three::before{
+    content: "";
+    top: 0px;
+    left:0px;
+    height: 81px;
+    position: absolute;
+    z-index: 1;
+}
+.one::before{
+
+    background: #ee161f;
+    width: 33% ;
+}
+.two::before{
+    background: #ffc703;
+    width: 66% ;
+}
+.three::before{
+    background: #00a154;
+    width: 100% ;
+}
+.one::after,.two::after,.three::after{
+    content: "";
+    background: black;
+    height: 30px;
+    width: 16px ;
+    position: absolute;
+    top: 26px;
+    left: 201px;
+}

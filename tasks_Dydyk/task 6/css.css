@@ -1,0 +1,19 @@
+h1 {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+h1::before{
+    content:""; 
+    width: 30vw;
+    height: 6px;
+    background: black;
+}
+h1::after{
+    content:""; 
+    width: 30vw;
+    height: 6px;
+    background: black;
+}
