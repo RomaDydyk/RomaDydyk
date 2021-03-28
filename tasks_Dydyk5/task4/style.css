@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-block-position,.button,.main-block-float{
+  border: 4px solid #569092;
+  border-radius: 15px;
+}
+
+.button:nth-child(n){
+  text-align: center;
+}
+.button:nth-child(4n+1){
+  left: 18px;
+}
+.button:nth-child(4n+2){
+  left: 100px;
+}
+.button:nth-child(4n+3){
+  left: 186px;
+}
+.button:nth-child(4n+4){
+  left: 276px;
+}
+.button:nth-child(1),.button:nth-child(2),.button:nth-child(3),.button:nth-child(4){
+  top: 193px;
+}
+.button:nth-child(5),.button:nth-child(6),.button:nth-child(7),.button:nth-child(8){
+  top: 283px;
+}
+.button:nth-child(9),.button:nth-child(10),.button:nth-child(11),.button:nth-child(12){
+  top: 370px;
+}
+.button:nth-child(13),.button:nth-child(14),.button:nth-child(15),.button:nth-child(16){
+  top: 457px;
+}
+
+.main-block-position {
+  display: inline-block;
+  position: relative;
+  width: 375px;
+  height: 573px;
+}
+.headblock-position {
+  position: absolute;
+  left: 0px;
+  top: 18px;
+  width: 378px;
+  height: 50px;
+  background: #569092;
+}
+p {
+  
+  margin: 10px 10px 0 0;
+  color: #ebf4fa;
+  font-size: 20px;
+  text-align: right;
+}
+.main-block-position input {
+  position: absolute;
+  top: 75px;
+  left: 10px;
+  width: 349px;
+  height: 42px;
+  border: 3px solid #569092;
+  border-radius: 10px;
+}
+.greendiv-position {
+  position: absolute;
+  top: 130px;
+  right: 13px;
+  width: 100px;
+  height: 45px;
+  background: #5f9c9d;
+}
+.main-block-position .button {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+}
+.button:hover{
+  cursor: pointer;
+}
+.button:active{
+  background: #569092;
+}
+span{
+  position: relative;
+  top: 26%;
+  font-size: 25px;
+}
+.main-block-float {
+  float: left;
+  margin-right: 80px;
+  width: 375px;
+  height: 573px;
+}
+.headblock-float{
+  padding-top:1px;
+  margin-top:18px;
+  width: 378px;
+  height: 49px;
+  background: #569092;
+}
+
+.numbers-float{
+  margin-top: 100px;
+  margin-left: 5px;
+ width: 375px;
+ height: 356px;
+}
+.greendiv-float {
+  float: right;
+  margin: 8px 16px 20px 0;
+  width: 100px;
+  height: 45px;
+  background: #5f9c9d;
+}
+.main-block-float input {
+  float: left;
+  margin-top: 6px;
+  margin-left:10px;
+  width: 349px;
+  height: 42px;
+  border: 3px solid #569092;
+  border-radius: 10px;
+}
+.main-block-float .button{
+  clear: right;
+  float: left; 
+  width: 64px;
+  height: 64px;
+
+}
+.main-block-float .button:nth-child(n){
+  margin: 0 7px 15px 10px;
+}
