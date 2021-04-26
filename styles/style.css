@@ -47,3 +47,12 @@ body {
 a{
     text-decoration: none;
 }
+.button{
+    display: flex;
+    font-size: 20px;
+    border: 3px solid black;
+    margin: 8px;
+    width: 150px;
+    border-radius: 3px;
+    text-decoration: none;
+}
