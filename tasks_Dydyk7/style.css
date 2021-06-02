@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+h1{
+	margin:0 0 60px 260px;
+}
+.wrap{
+	position: relative;
+	margin-left: 30px;
+	display: flex;
+	height: 30em;
+	width: 70em;
+	border: 1px solid #dedede;
+}
+.wrap::before{
+position: absolute;
+content: "<";
+top: 50px;
+left: -18px;
+width: 30px;
+height: 30px;
+border:3px solid #d8d8d8;
+border-radius: 50%;
+font-size: 25px;
+text-align: center;
+color: #d8d8d8;
+font-weight: bold;
+}
+.wrap::after{
+	position: absolute;
+	content: ">";
+	top: 50px;
+	right: -18px;
+	width: 30px;
+	height: 30px;
+	border:3px solid #d8d8d8;
+	border-radius: 50%;
+	font-size: 25px;
+	text-align: center;
+	color: #d8d8d8;
+	font-weight: bold;
+}
+
+.wrap_card{
+	position: relative;
+	height: 100%;
+	width: 25%;
+	border-right: 1px solid lightgray;
+}
+.wrap_card:last-child{
+	border-right: none;
+}
+.wrap_sticker{
+	position: absolute;
+	top:-33px;
+	right: 10px;
+	height: 50px;
+	width: 65px;
+	padding-top: 15px;
+	border-radius: 50%;
+	border: 3px solid white;
+	text-align: center;
+	font-size: 12px;
+	color: white;
+}
+.sticker{
+	background-color: rgb(8, 158, 228);
+}
+.sticker_new{
+	height: 40px;
+	padding-top: 25px;
+	background-color: rgb(107, 199, 80);
+}
+.sticker_none{
+	display: none;
+}
+.wrap_category{
+	text-align: center;
+	padding: 20px 0;
+	font-size: 21px;
+	color: #798589;
+}
+.wrap_line{
+height: 1px;
+width: 80%;
+margin: 0 auto;
+background: lightgray;
+}
+img{
+padding: 20px;
+height: 200px;
+width: 85%;
+}
+.wrap_itname{
+text-align: center;
+
+}
+.wrap_itname a{
+	font-size: 23px;
+	text-decoration: none;
+	color: lightskyblue;
+}
+.wrap_price{
+	display: flex;
+	padding-top: 20px;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+.price_none{
+	padding-top: 20px;
+	height: 21px;
+	
+}
+.wrap_fullprice{
+	margin-left: 7px;
+}
+.wrap_discount{
+	text-decoration: line-through;
+	font-size: 16px;
+}
+
+.wrap_botton{
+	margin: 10px auto;
+	padding-top: 13px;
+	height: 32px;
+    width: 50%;
+	text-align: center;
+	background: #f0e524;
+}
+.botton_end{
+	padding-top: 5px;
+	height: 40px;
+	color: white;
+	background-color: #bf1ef0;
+}
+.wrap:hover::after,.wrap:hover::before{
+	cursor: pointer;
+}
