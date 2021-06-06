@@ -1,0 +1,46 @@
+.navigation {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1600px;
+    height: 1340px;
+    z-index: 75;
+  }
+  .info_CreativeStudio_com {
+    font-size: 13px;
+    font-family: "Arial";
+    color: rgb(153, 152, 152);
+    line-height: 5.769;
+    text-align: left;
+    position: absolute;
+    left: 1133px;
+    top: 76.845px;
+    z-index: 74;
+  }
+  .home___________________about_us________________ {
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(9, 9, 9);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 6.25;
+    text-align: left;
+    position: absolute;
+    left: 624px;
+    top: 51.5px;
+    z-index: 73;
+  }
+
+  
+.top{
+    position: relative;
+}
+  .logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1600px;
+    height: 1340px;
+    z-index: 81;
+  }
+  
