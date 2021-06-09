@@ -1,46 +1,230 @@
-.navigation {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1600px;
-    height: 1340px;
-    z-index: 75;
-  }
-  .info_CreativeStudio_com {
-    font-size: 13px;
-    font-family: "Arial";
-    color: rgb(153, 152, 152);
-    line-height: 5.769;
-    text-align: left;
-    position: absolute;
-    left: 1133px;
-    top: 76.845px;
-    z-index: 74;
-  }
-  .home___________________about_us________________ {
-    font-size: 12px;
-    font-family: "Arial";
-    color: rgb(9, 9, 9);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 6.25;
-    text-align: left;
-    position: absolute;
-    left: 624px;
-    top: 51.5px;
-    z-index: 73;
-  }
-
-  
-.top{
-    position: relative;
+* {
+  margin: 0;
+  padding: 0;
 }
-  .logo {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 1600px;
-    height: 1340px;
-    z-index: 81;
+.wrap {
+width: 960px;
+margin: 0 auto;
+}
+.info {
+display: flex;
+justify-content: flex-end;
+margin-top: 18px;
+text-decoration: none;
+font-size: 13px;
+font-family: "Arial";
+color: rgb(153, 152, 152);
+}
+.logo {
+  margin-top: -7px;
+}
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -60px;
+  padding-bottom: 62px;
+}
+.navigation a {
+  margin-left: 64px;
+  font-size: 12px;
+  font-family: "Arial";
+  color: #fe9b00;
+  font-weight: bold;
+  text-decoration: none;
+}
+.navigation a:hover {
+  color: black;
+}
+.line {
+  background-color: #c0c0c0;
+  width: 100%;
+  height: 1px;
+}
+.main_image{
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.main_image a {
+	display: flex;
+  position: absolute;
+  top: 288px;
+  left: 321px;
+	width: 159px;
+	height: 44px;
+}
+.main_image a:hover {
+  cursor: pointer;
+}
+.article {
+  display: flex;
+  padding-top: 26px;
+  padding-bottom: 40px;
+  justify-content: space-between;
+}
+.content {
+  width: 282px;
+}
+.burger{
+  display: none;
+}
+.strong_line {
+  width: 100%;
+  background-color: black;
+  height: 6px;
+  margin-top: 12px;
+  margin-bottom: 21px;
+}
+.content a {
+  font-size: 12px;
+  font-family: "Arial";
+  color: #fe9b00;
+  font-weight: bold;
+  text-decoration: none;
+}
+.content p,.portf_text p,.blog p,.footer_wrap span {
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-family: "Arial";
+  line-height: 1.6;
+  color: rgb(93, 93, 93);
+}
+.arrow_small {
+  font-size: small;
+}
+.caption,.caption_portf {
+  font-size: 15px;
+  font-family: "Arial";
+  color: rgb(9, 9, 9);
+  font-weight: bold;
+}
+.signature {
+  font-size: small;
+  font-style: italic;
+  color:rgb(93, 93, 93);
+}
+.with_tick{
+  position: relative;
+  margin-left: 30px;
+}
+.with_tick::before{
+  content: url(image/radiobutton.png);
+  position: absolute;
+  top: 5px;
+  left: -30px;
+}
+.portfolio {
+  padding-top: 17px;
+}
+.portf_img{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.blog_and_connect{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 27px;
+  margin-bottom: 48px;
+}
+.blog{
+  width: 660px;
+}
+.caption_blog {
+  font-size: 13px;
+  font-family: "Arial";
+  color: rgb(9, 9, 9);
+  font-weight: bold;
+}
+.blog p {
+  margin-top: 30px;
+}
+.connect {
+  width: 173px;
+  margin-right: 47px;
+}
+.icon{
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  background-color: #e2e2e2;
+  /* width: 100%; */
+}
+.footer_wrap{
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer_wrap span {
+  padding-top: 13px;
+}
+
+@media (max-width: 426px)
+{
+  .info {
+    display: none;
   }
-  
+  .logo{
+    width: 400px;
+  }
+  .navigation {
+    display: none;
+  }
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    width: 100%;
+  }
+  .content p,.content a,.arrow,.caption,.signature,.caption_portf,.caption_blog,.blog p {
+    font-size: xx-large;
+    padding: 10px;
+  }
+  .arrow_small{
+    display: none;
+  }
+  .with_tick {
+    margin-left: 40px;
+  }
+  .burger {
+    display: flex;
+    width: 100px;
+  }
+  .footer{
+    display: none;
+  }
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .line{
+    height: 4px;
+  }
+  .portf_img{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .portf_img img {
+    display: flex;
+    width: 520px;
+    padding: 10px 0;
+  }
+  .blog_and_connect {
+    display: flex;
+    flex-direction: column;
+  }
+  .connect{
+    display: flex;
+    flex-direction: column;
+  }
+}
