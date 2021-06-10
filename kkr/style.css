@@ -199,7 +199,7 @@ color: rgb(153, 152, 152);
     width: 100px;
   }
   .footer{
-   width: 300%;
+   display: none;
   }
   .header {
     display: flex;
